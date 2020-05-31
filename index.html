@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <title>Img Processing</title>
+  </head>
+  <body>
+    <div>
+      <canvas
+        id='canvas'
+        class='potrait center-flex'
+        height='450'
+        width='450'
+      />
+    </div>
+    <p>Saturation:</p>
+    <input
+      class='slider'
+      id='bw'
+      type='range'
+      onchange='imageProcess()'
+      min='0'
+      max='100'
+      value='0'
+    />
+    <p id='filter-title'>No Filter:</p>
+    <input
+      class='slider'
+      id='filter'
+      type='range'
+      onchange='processConv()'
+      min='0'
+      max='12'
+      value='0'
+    />
+    <p>Contrast:</p>
+    <input
+      class='slider'
+      id='contrast'
+      type='range'
+      onchange='processContrast()'
+      min='0'
+      max='100'
+      value='0'
+    />
+    <script src='./script.js'></script>
+  </body>
+</html>
